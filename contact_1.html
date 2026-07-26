@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Amas Omotola</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Amas Omotola</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section>
+    <span class="section-label">Get In Touch</span>
+    <h2>Contact</h2>
+
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <span class="section-label">Handle</span>
+          <h3>@amasomotola</h3>
+        </div>
+        <div class="contact-info-item">
+          <span class="section-label">Based In</span>
+          <h3>Lagos, Nigeria</h3>
+        </div>
+        <div class="contact-info-item">
+          <span class="section-label">Phone</span>
+          <h3>0802 445 2864</h3>
+        </div>
+        <div class="contact-info-item">
+          <span class="section-label">For</span>
+          <p style="color:var(--sand);">Client inquiries, collaborations, or AO Academy questions — send a message and I'll get back to you.</p>
+        </div>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group" id="group-name">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <span class="field-error">Please enter your name.</span>
+        </div>
+
+        <div class="form-group" id="group-email">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email">
+          <span class="field-error">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group" id="group-phone">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone">
+          <span class="field-error">Phone number should contain digits only.</span>
+        </div>
+
+        <div class="form-group" id="group-message">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <span class="field-error">Please enter a message.</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Amas Omotola &middot; Built for COS 106 — Introduction to Web Technologies &middot; <a href="contact.html">Get in touch</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
